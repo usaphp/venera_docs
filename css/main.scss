@@ -1,0 +1,231 @@
+@import "custom_reset.css";
+@import "font-awesome/font-awesome.css";
+
+$body-background : #fff;
+$text-color : #333332;
+$headers-color : #333332;
+$link-color : #4C7F96;
+
+$primary-font-family : "proxima-nova",sans-serif;
+$secondary-font-family : "proxima-nova",sans-serif;
+
+$primary-font-weight: 300;
+$headings-font-weight: 500;
+
+$base-font-size : 20px;
+$base-line-height : 28px;
+
+
+body {
+  background-color: $body-background;
+  font-family: $primary-font-family;
+  font-weight: $primary-font-weight;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $text-color;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #57B6F2;
+    background-color: #E8F6FF;
+  }
+}
+
+ol {
+  li {
+    margin-bottom: 10px;
+  }
+  ul {
+    margin-top: 20px;
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $headers-color;
+  font-family: $secondary-font-family;
+  font-weight: $headings-font-weight;
+}
+
+h1 {
+  font-size: $base-font-size * 1.8;
+  line-height: $base-line-height * 1.8;
+  border-bottom: 1px solid darken($body-background, 10%);
+}
+h2 {
+  font-size: $base-font-size * 1.4;
+  line-height: $base-line-height * 1.4;
+  border-bottom: 1px solid darken($body-background, 10%);
+}
+h3 {
+  font-size: $base-font-size * 1.2;
+  line-height: $base-line-height * 1.2;;
+  border-bottom: 1px solid darken($body-background, 10%);
+  i {
+    font-size: $base-font-size;
+    margin-right: 5px;
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+  max-width: 100%; /* Part 1: Set a maxium relative to the parent */
+  width: auto\9; /* IE7-8 need help adjusting responsive images */
+  height: auto; /* Part 2: Scale the height according to the width, otherwise you get stretching */
+
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+img.screenshot {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 300px;
+  display: block;
+}
+
+.container {
+  max-width: 1300px;
+  min-width: 950px;
+  margin: 0px auto;
+  @include clearfix;
+
+  .container-i {
+    float: right;
+    width: 70%;
+    border-right: 1px solid darken($body-background, 10%);
+    border-left: 1px solid darken($body-background, 10%);
+    padding: 0 3em;
+    @include box-sizing(border-box);
+  }
+  .side-menu-w {
+    width: 30%;
+    padding-left: 20px;
+    float: left;
+    @include box-sizing(border-box);
+  }
+}
+
+.table-of-contents-header {
+  line-height: $base-line-height * 1.8;
+  i {
+    font-size: 20px;
+  }
+}
+.table-of-contents {
+  font-size: $base-font-size*.8;
+}
+
+
+
+
+
+// -------------------------------- //
+//          LIST OF FILES           //
+// -------------------------------- //
+
+
+.list-of-files {
+  padding-left: 70px;
+  li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 30px;
+    span {
+      display: block;
+      font-size: 12px;
+      line-height: 12px;
+      color: #888;
+      font-weight: 100;
+    }
+
+    &:before {
+      font-family: FontAwesome;
+      position: absolute;
+      left: 0px;
+      top: 10px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &:last-child {
+      border-bottom: 0px;
+    }
+    &.folder-opened:before {
+      color: #3786B7;
+      content: "\f115";
+    }
+    &.folder-closed:before {
+      color: #3786B7;
+      content: "\f114";
+    }
+    &.file:before {
+      color: #3786B7;
+      content: "\f0f6"; //
+    }
+    &.archive:before {
+      color: #3786B7;
+      content: "\f0a0";
+    }
+  }
+  ul {
+    margin-left: 0px;
+    padding-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+
+    &:before {
+      font-family: FontAwesome;
+      position: absolute;
+      left: -26px;
+      top: 10px;
+      font-size: 18px;
+      line-height: 24px;
+      color: #3786B7;
+      content: "\f0d7";
+    }
+  }
+}
+.archive-w {
+  padding: 10px;
+  padding-left: 40px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+  position: relative;
+  .archive {
+    &:before {
+      font-family: FontAwesome;
+      position: absolute;
+      left: 5px;
+      top: 10px;
+      color: #3786B7;
+      content: "\f0a0";
+    }
+  }
+}
+
+.note {
+  font-size: $base-font-size * 0.8;
+  line-height: $base-line-height * 0.8;
+  color: #777;
+  font-weight: 100;
+  background-color: #f9f8f1;
+  padding: 5px;
+  margin-top: 5px;
+}
