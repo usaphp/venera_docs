@@ -36,7 +36,8 @@ h1 {
 h2 {
   font-size: 28px;
   line-height: 39.2px;
-  border-bottom: 1px solid #e6e6e6; }
+  border-bottom: 1px solid #e6e6e6;
+  margin-top: 80px; }
 
 h3 {
   font-size: 24px;
@@ -66,6 +67,8 @@ img.screenshot {
   margin-bottom: 30px;
   width: 300px;
   display: block; }
+  img.screenshot.bigger {
+    width: 450px; }
 
 .container {
   max-width: 1300px;
@@ -95,7 +98,8 @@ img.screenshot {
     box-sizing: border-box; }
 
 .table-of-contents-header {
-  line-height: 50.4px; }
+  line-height: 50.4px;
+  margin-top: 20px; }
   .table-of-contents-header i {
     font-size: 20px; }
 

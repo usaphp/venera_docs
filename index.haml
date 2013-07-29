@@ -56,7 +56,7 @@
     %h3
       %i.icon-youtube-play
       Video Tutorial:
-    <iframe src="http://player.vimeo.com/video/71118538?title=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    <iframe src="http://player.vimeo.com/video/71127145?title=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     %h3
       %i.icon-list-ol
       Step by step guide:
@@ -148,8 +148,55 @@
     %h3 Content Elements
     %p
       This is a list of available content elements that can be placed on the working canvas or inside of the columns. Think of them as bricks. With those bricks you are building your layout. Most of the content elements have options, to set them click pencil icon. To save changes click save button.
-    %h2#docs_theme_settings Theme Settings
+    %ul
+      %li Row
+      %li Text block
+      %li Separator
+      %li Separator with text
+      %li Message Box
+      %li Facebook Like
+      %li Tweetmeme button
+      %li Google+ button
+      %li Pinterest button
+      %li FAQ
+      %li Single image
+      %li Image gallery
+      %li Tabs
+      %li Tour section
+      %li Accordion
+      %li Teaser (posts) grid
+      %li Posts slider
+      %li Widgetised sidebar
+      %li Button
+      %li Call to action button
+      %li Video player
+      %li Google maps
+      %li Flickr widget
+      %li Progress bar
+      %li Revolution slider
+      %li Gravity form
+      %li Posts grid
+      %li Framed item
+      %li Clients
+      %li Team members
+      %li Pricing table
+      %li Recent posts
+      %li Iconed feature
+      %li Testimonials
+      %li Content slider
+      %li Portfolio block
+    %h2#docs_gravity_forms Gravity Forms
+    %h3#docs_gravity_forms_howto
+      %i.icon-question-sign
+      How to use Gravity Forms
+
+
+
+    %h2#docs_theme_settings
+      %i.icon-cog
+      Theme Settings
     %p Theme Venera comes with an extensive configuration options. You can completely change a look and feel of the theme just by using this options panel. In order to change default theme settings you have to go to <strong>"Options"</strong> page from the side menu. You will see multiple sub pages for options page. I will explain each of them one by one.
+    %h2#docs_settings_appearance Appearance
     %h3#docs_settings_color_scheme Color scheme
     %p These settings define a color scheme you want to use for the website, you can also set your custom colors by clicking the "Allow to override color scheme settings" checkmark and defining your custom colors in other sections of "Options" panel.
     %h3#docs_settings_general General
@@ -217,21 +264,150 @@
       %li
         %strong Text Color
         \- Color for all text elements inside the call to action section.
+    %h2#docs_settings_ui_scheme UI Elements
+    %p On this page you are defining colors for different elements used on the theme: items, testimonials, accordion, tabs, pricing table.
     %h3#docs_settings_items Items
+    %p These settings control the look of the item blocks on your theme. This includes the look of post teasers, portfolio items, clients and team members.
+    %img.screenshot{:src => "img/docs_settings_4.jpg", :alt => ""}
+    %img.screenshot.bigger{:src => "img/docs_settings_item_explain.png", :alt => ""}
+    %ul
+      %li
+        %strong Make it flat
+        \- Checking this field will remove all the shadows, gradients and gloss from posts and portfolio items making them look flat.
+      %li
+        %strong Background Color
+        \- Define a custom background color for items.
+      %li
+        %strong Headings Colors
+        \- Color for text headings inside of the item.
+      %li
+        %strong Text Color
+        \- Color for text inside of items.
+      %li
+        %strong Border Radius (e.g. 4px)
+        \- Set a border radius of item blocks.
+      %li
+        %strong Padding (e.g. 10px)
+        \- Padding for item blocks.
+      %li
+        %strong Text Links Color
+        \- Color for text links inside of the item block.
+      %li
+        %strong Tag Background Color
+        \- Background color for tags.
+      %li
+        %strong Tag Text Color
+        \- Text color for tags.
     %h3#docs_settings_testimonials Testimonials
+    %p These settings control the look and feel of the testimonials elements on your pages. You have two variants of testimonials layout:
+    %h3 Opened
+    %p Always opened so you don't have to click on the author avatar to activate it.
+    %img.screenshot{:src => "img/docs_settings_testimonials_1.jpg", :alt => ""}
+    %h3 Toggle on click
+    %p This style is a compact version of the previous one, in order to see a testimonial bubble you will need to click on the avatar.
+    %img.screenshot{:src => "img/docs_settings_testimonials_2.jpg", :alt => ""}
+    %h3 Testimonials Settings
+    %img.screenshot.bigger{:src => "img/docs_settings_testimonials_explain.png", :alt => ""}
+    %ul
+      %li
+        %strong Make it flat
+        \- Checking this field will remove all the shadows, gradients and gloss from testimonials items.
+      %li
+        %strong Background Color
+        \- Define a custom background color for testimonial bubble.
+      %li
+        %strong Headings Colors
+        \- Color for text headings for testimonials.
+      %li
+        %strong Text Color
+        \- Color for text inside of testimonials.
+      %li
+        %strong Border Radius (e.g. 4px)
+        \- Border radius of the testimonial bubble.
+      %li
+        %strong Box Padding (e.g. 10px)
+        \- Padding for the testimonial bubble.
+      %li
+        %strong Highlight Color
+        \- Color for the highlighted border that separates title from paragraph.
+      %li
+        %strong Author Text Color
+        \- Color for author and company information.
+      %li
+        %strong Author Border Color
+        \- Border color for the author avatar box.
     %h3#docs_settings_accordion Accordion
+    %img.screenshot{:src => "img/docs_settings_5.jpg", :alt => ""}
     %h3#docs_settings_tabs Tabs
+    %img.screenshot{:src => "img/docs_settings_6.jpg", :alt => ""}
     %h3#docs_settings_browser_frame Browser frame
+    %p
+      This is the most awesome feature - it is a browser frame which is not an image but an HTML frame - so it is fully customizable - you can change colors, shadows, buttons and even the URL text.
+      You can insert a single image, a set of images to create a slider or a video from youtube or vimeo.
+    %img.screenshot{:src => "img/docs_settings_7.jpg", :alt => ""}
     %h3#docs_settings_pricing_table Pricing table
+    %img.screenshot{:src => "img/docs_settings_8.jpg", :alt => ""}
     %h3#docs_settings_buttons Buttons
-    %h3#docs_settings_blog Blog posts
+    %p
+      This theme comes with a set of gorgeous buttons. You have the following styles: default button, primary button, informational button, danger button, warning button and inversed button. Using these settings you can change
+      a look and feel of every button type from that list. It's pretty straightforward - each style has two parameters: background color and text color. You can also select a look of those buttons by selecting a style parameter from a dropdown (default, flat and absolutely flat).
+    %img.screenshot.bigger{:src => "img/docs_settings_9.jpg", :alt => ""}
+    %h2#docs_settings_blog_posts Blog posts
+    %p These settings control the look of the single post item. This is basically the main settings section for your blog posts.
+    %h3#docs_settings_post Posts
+    %img.screenshot.bigger{:src => "img/docs_settings_10.jpg", :alt => ""}
+    %ul
+      %li
+        %strong Make it Flat
+        \- This will remove all shadows and gloss from post content.
+      %li
+        %strong Content Border Radius
+        \- Border radius for the post content.
+      %li
+        %strong Content Background
+        \- Background for post content.
+      %li
+        %strong Content Padding
+        \- Padding for post content.
+      %li
+        %strong Headings Color
+        \- Color for post headings.
+      %li
+        %strong Text Color
+        \- Text color for post content.
+      %li
+        %strong Links Color
+        \- Color of the links inside of the content.
     %h3#docs_settings_comments Comments
-    %h3#docs_settings_header Header
-    %h3#docs_settings_footer Footer
-    %h2#docs_custom_post_types Custom Post Types
-    %h3#docs_cpt_pricing Pricing Packages
-    %h3#docs_cpt_testimonials Testimonials
-    %h3#docs_cpt_portfoio Portfolio
-    %h3#docs_cpt_team_members Team Members
-    %h3#docs_cpt_slides Slides
+    %img.screenshot.bigger{:src => "img/docs_settings_11.jpg", :alt => ""}
+    %ul
+      %li
+        %strong Make it flat
+        \- Checking this field will remove all the shadows, gradients and gloss from comment form.
+      %li
+        %strong Background color
+        \- Define a custom background color for comment form.
+      %li
+        %strong Box Border Radius
+        \- Border radius for comment form.
+      %li
+        %strong Box Padding
+        \- Padding for comment form box.
+      %li
+        %strong Headings Color
+        \- Comment form headings color.
+      %li
+        %strong Text Color
+        \- Text color for comment form.
+      %li
+        %strong Links Color
+        \- Color of the links inside of the comments form.
+    / %h2#docs_settings_header Header
+    / %h2#docs_settings_footer Footer
+    / %h2#docs_custom_post_types Custom Post Types
+    / %h3#docs_cpt_pricing Pricing Packages
+    / %h3#docs_cpt_testimonials Testimonials
+    / %h3#docs_cpt_portfoio Portfolio
+    / %h3#docs_cpt_team_members Team Members
+    / %h3#docs_cpt_slides Slides
 <!-- @include _footer -->

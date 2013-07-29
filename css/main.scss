@@ -62,6 +62,7 @@ h2 {
   font-size: $base-font-size * 1.4;
   line-height: $base-line-height * 1.4;
   border-bottom: 1px solid darken($body-background, 10%);
+  margin-top: 80px;
 }
 h3 {
   font-size: $base-font-size * 1.2;
@@ -93,6 +94,9 @@ img.screenshot {
   margin-bottom: 30px;
   width: 300px;
   display: block;
+  &.bigger {
+    width: 450px;
+  }
 }
 
 .container {
@@ -119,6 +123,7 @@ img.screenshot {
 
 .table-of-contents-header {
   line-height: $base-line-height * 1.8;
+  margin-top: 20px;
   i {
     font-size: 20px;
   }
