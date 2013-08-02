@@ -92,10 +92,15 @@ img {
 img.screenshot {
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 300px;
+  width: 40%;
   display: block;
+  @include transition(all ease 0.3s);
+  cursor: pointer;
   &.bigger {
-    width: 450px;
+    width: 60%;
+  }
+  &.full {
+    width: 100%;
   }
 }
 
